@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notre Plateforme - Services Multi-domaines</title>
+    <style>
+        /* CSS de base */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e90ff;
+            padding: 1em 0;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #f0f8ff;
+            padding: 4em 1em;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 0.8em 1.5em;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .services {
+            padding: 3em 1em;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-icon {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .btn-service {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            margin-top: 1em;
+            padding: 0.6em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reviews-section {
+            padding: 3em 1em;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        .review-card {
+            background: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .stars {
+            color: gold;
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">NotrePlateforme</div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">À propos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Découvrez Nos Services Multi-domaines</h1>
+            <p>Une plateforme simple et efficace pour trouver et proposer des services adaptés à tous vos besoins.</p>
+            <button class="btn-primary" onclick="alert('Inscription bientôt disponible !')">Commencer
+                Maintenant</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Nos Services Populaires</h2>
+        <div class="services-grid">
+
+            <!-- Services Bâtiment & Chantier -->
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <div class="service-title">Gestion de chantier</div>
+                <div class="service-desc">Planification, coordination et supervision pour garantir la réussite de vos
+                    projets
+                    de construction.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👷‍♂️</div>
+                <div class="service-title">Conducteur de travaux</div>
+                <div class="service-desc">Suivi des travaux, gestion de la qualité et respect des délais sur vos
+                    chantiers.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👷‍♀️</div>
+                <div class="service-title">Chef de chantier</div>
+                <div class="service-desc">Gestion des équipes, contrôle technique et sécurité sur site pour une
+                    exécution
+                    optimale.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📐</div>
+                <div class="service-title">Études techniques</div>
+                <div class="service-desc">Réalisation de plans, cahiers des charges et analyses techniques adaptées à
+                    vos
+                    besoins.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <div class="service-title">Estimation des coûts</div>
+                <div class="service-desc">Évaluation précise des coûts pour vos projets, avec élaboration de devis
+                    détaillés.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <div class="service-title">Suivi budgétaire</div>
+                <div class="service-desc">Contrôle des dépenses et optimisation financière tout au long de vos
+                    chantiers.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <div class="service-title">Audit et expertise bâtiment</div>
+                <div class="service-desc">Analyse complète et conseils personnalisés pour garantir la qualité et la
+                    sécurité.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <div class="service-title">Conseil sécurité chantier</div>
+                <div class="service-desc">Mise en place des normes de sécurité et formation pour prévenir les accidents.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📚</div>
+                <div class="service-title">Formation professionnelle</div>
+                <div class="service-desc">Formation sur mesure pour ouvriers et chefs d’équipe afin d'améliorer leurs
+                    compétences.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <!-- Services Langues & Communication -->
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <div class="service-title">Traduction professionnelle</div>
+                <div class="service-desc">Traduction en français, anglais, turc, avec respect du contexte et des nuances
+                    culturelles.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✍️</div>
+                <div class="service-title">Rédaction & correction</div>
+                <div class="service-desc">Contenus multilingues clairs et professionnels pour vos documents et sites
+                    web.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <div class="service-title">Coaching communication interculturelle</div>
+                <div class="service-desc">Accompagnement pour mieux comprendre et gérer les différences culturelles en
+                    entreprise.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <div class="service-title">Création de contenus pédagogiques</div>
+                <div class="service-desc">Conception de QCM, tutoriels et supports didactiques multilingues adaptés à
+                    vos
+                    besoins.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <!-- Services Entreprise & Business -->
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <div class="service-title">Élaboration de business plans</div>
+                <div class="service-desc">Plans d’affaires personnalisés pour convaincre investisseurs et réussir votre
+                    projet.</div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <div class="service-title">Analyse économique & étude de marché</div>
+                <div class="service-desc">Études précises pour identifier opportunités, risques et segments à cibler.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <div class="service-title">Conseil en gestion financière</div>
+                <div class="service-desc">Optimisation des coûts, gestion de trésorerie et rentabilité de votre
+                    entreprise.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <div class="service-title">Coaching en gestion de projet</div>
+                <div class="service-desc">Méthodologie, organisation et management d’équipe pour atteindre vos
+                    objectifs.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧩</div>
+                <div class="service-title">Audit organisationnel & solutions</div>
+                <div class="service-desc">Diagnostic complet et propositions d’améliorations pour votre structure.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📣</div>
+                <div class="service-title">Stratégie marketing & développement</div>
+                <div class="service-desc">Plan d’action marketing pour booster votre visibilité et vos ventes.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🗂️</div>
+                <div class="service-title">Gestion administrative & juridique</div>
+                <div class="service-desc">Simplification et optimisation des démarches administratives et légales.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <div class="service-title">Conseil en digitalisation</div>
+                <div class="service-desc">Implémentation d’outils numériques pour moderniser votre entreprise.
+                </div>
+                <button class="btn-service">En savoir plus</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="reviews-section">
+        <h2>Ce que disent nos clients</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <p class="review-text">« Un accompagnement professionnel et efficace. Mon projet a été réalisé dans les
+                    temps et au budget. »</p>
+                <div class="stars">★★★★★</div>
+                <p class="review-author">— odile L.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-text">« Très satisfait du suivi et de la communication. Je recommande vivement ! »</p>
+                <div class="stars">★★★★★</div>
+                <p class="review-author">— Marc D.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-text">« Expertise et conseils pertinents, ça m’a beaucoup aidé à mieux gérer mon
+                    chantier. »</p>
+                <div class="stars">★★★★☆</div>
+                <p class="review-author">— bulent K.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 NotrePlateforme - Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>
